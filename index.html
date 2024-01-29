@@ -22,7 +22,83 @@
 
   <body>
     <header class="header">
-      <div class="container"></div>
+      <div class="container container__header">
+        <a href="/" class="logo">
+          <svg class="logo__icon" width="60" height="60" aria-label="Логотип">
+            <use href="./images/icons/symbol-defs.svg#logo"></use>
+          </svg>
+        </a>
+
+        <!--Button to open/close the mobile menu-->
+        <button class="burger-menu-button" aria-expanded="false" data-menu-button>
+          <svg
+            class="logo__icon"
+            width="48"
+            height="48"
+            aria-label="Іконка відкриття/закриття мобільного меню"
+          >
+            <use
+              href="./images/icons/symbol-defs.svg#close-burger-menu"
+              class="burger-menu-button__icon-close-menu"
+            ></use>
+
+            <use
+              href="./images/icons/symbol-defs.svg#burger-menu"
+              class="burger-menu-button__icon-menu"
+            ></use>
+          </svg>
+        </button>
+
+        <!--Mobile menu-->
+        <div class="mobile-menu" data-menu>
+          <div class="mobile-menu__wrapper">
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li class="navigation__list-item">
+                  <a href="" class="navigation__list-link">Послуги</a>
+                </li>
+
+                <li class="navigation__list-item">
+                  <a href="" class="navigation__list-link">Про нас</a>
+                </li>
+
+                <li class="navigation__list-item">
+                  <a href="" class="navigation__list-link">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+
+            <ul class="phone-numbers">
+              <li class="phone-numbers__item">
+                <a href="tel:+380676765016" class="phone-numbers__link">
+                  <span class="phone-numbers__link-name">Гурт</span>
+                  +380 (67) 676 50 16
+                </a>
+              </li>
+
+              <li class="phone-numbers__item">
+                <a href="tel:+380677253000" class="phone-numbers__link">
+                  <span class="phone-numbers__link-name">Роздріб</span>
+                  +380 (67) 725 30 00
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!--Phone numbers without links-->
+        <ul class="contacts">
+          <li class="contacts__item">
+            <span class="contacts__name">Гурт</span>
+            <span class="contacts__number">+380 (67) 676 50 16</span>
+          </li>
+
+          <li class="contacts__item">
+            <span class="contacts__name">Роздріб</span>
+            <span class="contacts__number">+380 (67) 725 30 00</span>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main>
@@ -35,14 +111,13 @@
       <section class="offers">
         <div class="container"></div>
       </section>
-    </main>
 
-    <!--Section Benefits-->
+      <!--Section Benefits-->
       <section class="benefits">
         <div class="container"></div>
       </section>
 
-        <!--Section What we do-->
+      <!--Section What we do-->
       <section class="works">
         <div class="container"></div>
       </section>
@@ -52,17 +127,17 @@
         <div class="container"></div>
       </section>
 
-       <!--Section Gallery-->
+      <!--Section Gallery-->
       <section class="gallyry">
         <div class="container"></div>
       </section>
 
-        <!--Section Our clients-->
+      <!--Section Our clients-->
       <section class="clients">
         <div class="container"></div>
       </section>
 
-       <!--Section Production-->
+      <!--Section Production-->
       <section class="production">
         <div class="container"></div>
       </section>
@@ -71,5 +146,7 @@
     <footer>
       <div class="container"></div>
     </footer>
+
+    <script defer src="./js/toggle-mobile-menu.js"></script>
   </body>
 </html>
