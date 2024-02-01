@@ -22,7 +22,7 @@
 
   <body>
     <header class="header">
-      <div class="container container__header">
+      <div class="container header__container">
         <a href="./index.html" class="logo">
           <svg class="logo__icon" width="60" height="60" aria-label="Логотип">
             <use href="./images/icons/symbol-defs.svg#logo"></use>
@@ -105,7 +105,7 @@
       <!--Section Hero-->
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Друкарня Мульти Арт</h1>
+          <h1 class="hero__title">Друкарня Мульти Арт</h1>
 
           <div class="hero-content">
             <p class="hero-content__text-first">МИ ДРУКУЄМО 16 років</p>
@@ -114,28 +114,28 @@
               <p class="hero-content__text-third">Наш досвід — ваш успіх</p>
             </div>
 
-            <ul class="works-list">
-              <li class="works-list__item">
+            <ul class="services-list">
+              <li class="services-list__item">
                 <div>
                   <svg class="hero__icon" width="44" height="44" aria-label="Іконка буклета">
                     <use href="./images/icons/symbol-defs.svg#hero-promotion"></use>
                   </svg>
                 </div>
 
-                <p class="works-list__item-text">Друк поліграфічної продукції</p>
+                <p class="services-list__item-text">Друк поліграфічної продукції</p>
               </li>
 
-              <li class="works-list__item">
+              <li class="services-list__item">
                 <div>
                   <svg class="hero__icon" width="44" height="44" aria-label="Іконка блокнота">
                     <use href="./images/icons/symbol-defs.svg#hero-after-printing"></use>
                   </svg>
                 </div>
 
-                <p class="works-list__item-text">Післядрукарські роботи</p>
+                <p class="services-list__item-text">Післядрукарські роботи</p>
               </li>
 
-              <li class="works-list__item">
+              <li class="services-list__item">
                 <div>
                   <svg
                     class="hero__icon"
@@ -147,7 +147,7 @@
                   </svg>
                 </div>
 
-                <p class="works-list__item-text">Вивід CtP-форм (пластин)</p>
+                <p class="services-list__item-text">Вивід CtP-форм (пластин)</p>
               </li>
             </ul>
           </div>
@@ -156,17 +156,208 @@
 
       <!--Section We offer you-->
       <section class="offers">
-        <div class="container"></div>
+        <div class="container">
+          <h2 class="offers__title">Пропонуємо вам</h2>
+          <p class="offers__text">Якість преміум-рівня і роботу великої команди фахівців!</p>
+
+          <ul class="offers-description">
+            <li class="offers-description__item">
+              <div>
+                <svg width="100" height="100" aria-label="Іконка аркуш з каплею фарби">
+                  <use href="./images/icons/symbol-defs.svg#offers-paint"></use>
+                </svg>
+              </div>
+
+              <div class="offers-description__item-wrapper">
+                <h3 class="offers-description__item-title">Європейські фарби та матеріали</h3>
+                <p class="offers-description__item-text">
+                  Друкуємо високоякісною фарбою HUBER на паперах європейських виробників.
+                </p>
+              </div>
+            </li>
+
+            <li class="offers-description__item">
+              <div>
+                <svg width="100" height="100" aria-label="Іконка принтера">
+                  <use href="./images/icons/symbol-defs.svg#offers-printer"></use>
+                </svg>
+              </div>
+
+              <div class="offers-description__item-wrapper">
+                <h3 class="offers-description__item-title">Друк на європейському обладнанні</h3>
+                <p class="offers-description__item-text">
+                  На виробництві нашої друкарні використовуються більше 20 одиниць техніки.
+                </p>
+              </div>
+            </li>
+
+            <li class="offers-description__item">
+              <div>
+                <svg width="100" height="100" aria-label="Іконка калькулятора">
+                  <use href="./images/icons/symbol-defs.svg#offers-calculator"></use>
+                </svg>
+              </div>
+
+              <div class="offers-description__item-wrapper">
+                <h3 class="offers-description__item-title">Розрахунок замовлення</h3>
+                <p class="offers-description__item-text">
+                  Кожне замовлення розраховується індивідульно.
+                </p>
+              </div>
+            </li>
+
+            <li class="offers-description__item">
+              <div>
+                <svg width="100" height="100" aria-label="Іконка вантажного автомобіля">
+                  <use href="./images/icons/symbol-defs.svg#offers-car"></use>
+                </svg>
+              </div>
+
+              <div class="offers-description__item-wrapper">
+                <h3 class="offers-description__item-title">Безкоштовна доставка</h3>
+                <p class="offers-description__item-text">
+                  Ми пропонуємо безкоштовну доставку в межах Львова.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!--Section Benefits-->
       <section class="benefits">
-        <div class="container"></div>
+        <div class="container">
+          <h2></h2>
+        </div>
       </section>
 
-      <!--Section What we do-->
+      <!--Section Works (what we do)-->
       <section class="works">
-        <div class="container"></div>
+        <div class="container works__container">
+          <h2 class="works__title">Що ми робимо</h2>
+
+          <ul class="works-list">
+            <li class="works-list__item">
+              <div>
+                <svg width="80" height="80" aria-label="Іконка щоденника">
+                  <use href="./images/icons/symbol-defs.svg#wors-diary"></use>
+                </svg>
+              </div>
+
+              <p class="works-list__item-text">Щоденники (записні книжки)</p>
+            </li>
+
+            <li class="works-list__item">
+              <div>
+                <svg width="80" height="80" aria-label="Іконка блокнота">
+                  <use href="./images/icons/symbol-defs.svg#works-notebook"></use>
+                </svg>
+              </div>
+
+              <p class="works-list__item-text">Блокноти</p>
+            </li>
+
+            <li class="works-list__item">
+              <div>
+                <svg width="80" height="80" aria-label="Іконка календаря">
+                  <use href="./images/icons/symbol-defs.svg#works-calendar"></use>
+                </svg>
+              </div>
+
+              <p class="works-list__item-text">Календарі</p>
+            </li>
+
+            <li class="works-list__item">
+              <div>
+                <svg width="80" height="80" aria-label="Іконка книги">
+                  <use href="./images/icons/symbol-defs.svg#works-book"></use>
+                </svg>
+              </div>
+
+              <p class="works-list__item-text">Книги</p>
+            </li>
+
+            <li class="works-list__item">
+              <div>
+                <svg width="80" height="80" aria-label="Іконка брошури">
+                  <use href="./images/icons/symbol-defs.svg#works-brochure"></use>
+                </svg>
+              </div>
+
+              <p class="works-list__item-text">Брошури, каталоги</p>
+            </li>
+
+            <li class="works-list__item">
+              <div>
+                <svg width="80" height="80" aria-label="Іконка бланка">
+                  <use href="./images/icons/symbol-defs.svg#works-blank"></use>
+                </svg>
+              </div>
+
+              <p class="works-list__item-text">Бланки</p>
+            </li>
+
+            <li class="works-list__item">
+              <div>
+                <svg width="80" height="80" aria-label="Іконка листівки">
+                  <use href="./images/icons/symbol-defs.svg#works-postcard"></use>
+                </svg>
+              </div>
+
+              <p class="works-list__item-text">Вітальні листівки</p>
+            </li>
+
+            <li class="works-list__item">
+              <div>
+                <svg width="80" height="80" aria-label="Іконка запрошення">
+                  <use href="./images/icons/symbol-defs.svg#works-invitation"></use>
+                </svg>
+              </div>
+
+              <p class="works-list__item-text">Запрошення</p>
+            </li>
+
+            <li class="works-list__item">
+              <div>
+                <svg width="80" height="80" aria-label="Іконка диплома">
+                  <use href="./images/icons/symbol-defs.svg#works-diploma"></use>
+                </svg>
+              </div>
+
+              <p class="works-list__item-text">Дипломи</p>
+            </li>
+
+            <li class="works-list__item">
+              <div>
+                <svg width="80" height="80" aria-label="Іконка папки">
+                  <use href="./images/icons/symbol-defs.svg#works-folders"></use>
+                </svg>
+              </div>
+
+              <p class="works-list__item-text">Папки</p>
+            </li>
+
+            <li class="works-list__item">
+              <div>
+                <svg width="80" height="80" aria-label="Іконка пакунка">
+                  <use href="./images/icons/symbol-defs.svg#works-packaging"></use>
+                </svg>
+              </div>
+
+              <p class="works-list__item-text">Упаковка</p>
+            </li>
+
+            <li class="works-list__item">
+              <div>
+                <svg width="80" height="80" aria-label="Іконка етикетки">
+                  <use href="./images/icons/symbol-defs.svg#works-label"></use>
+                </svg>
+              </div>
+
+              <p class="works-list__item-text">Етикетки</p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!--Section About us-->
