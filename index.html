@@ -55,11 +55,11 @@
             <nav class="navigation">
               <ul class="navigation__list">
                 <li class="navigation__list-item">
-                  <a href="" class="navigation__list-link">Послуги</a>
+                  <a href="#works" class="navigation__list-link">Послуги</a>
                 </li>
 
                 <li class="navigation__list-item">
-                  <a href="" class="navigation__list-link">Про нас</a>
+                  <a href="#about-us" class="navigation__list-link">Про нас</a>
                 </li>
 
                 <li class="navigation__list-item">
@@ -70,17 +70,11 @@
 
             <ul class="phone-numbers">
               <li class="phone-numbers__item">
-                <a href="tel:+380676765016" class="phone-numbers__link">
-                  <span class="phone-numbers__link-name">Гурт</span>
-                  +380 (67) 676 50 16
-                </a>
+                <a href="tel:+380677253000" class="phone-numbers__link"> +380 (67) 725 30 00 </a>
               </li>
 
               <li class="phone-numbers__item">
-                <a href="tel:+380677253000" class="phone-numbers__link">
-                  <span class="phone-numbers__link-name">Роздріб</span>
-                  +380 (67) 725 30 00
-                </a>
+                <a href="tel:+380676765016" class="phone-numbers__link"> +380 (67) 676 50 16 </a>
               </li>
             </ul>
           </div>
@@ -89,13 +83,11 @@
         <!--Phone numbers without links-->
         <ul class="contacts">
           <li class="contacts__item">
-            <span class="contacts__name">Гурт</span>
-            <span class="contacts__number">+380 (67) 676 50 16</span>
+            <span class="contacts__number">+380 (67) 725 30 00</span>
           </li>
 
           <li class="contacts__item">
-            <span class="contacts__name">Роздріб</span>
-            <span class="contacts__number">+380 (67) 725 30 00</span>
+            <span class="contacts__number">+380 (67) 676 50 16</span>
           </li>
         </ul>
       </div>
@@ -224,16 +216,9 @@
         </div>
       </section>
 
-      <!--Section Benefits-->
-      <section class="benefits">
-        <div class="container">
-          <h2></h2>
-        </div>
-      </section>
-
       <!--Section Works (what we do)-->
-      <section class="works">
-        <div class="container works__container">
+      <section id="works" class="works">
+        <div class="container">
           <h2 class="works__title">Що ми робимо</h2>
 
           <ul class="works-list">
@@ -244,7 +229,9 @@
                 </svg>
               </div>
 
-              <p class="works-list__item-text">Щоденники (записні книжки)</p>
+              <p class="works-list__item-text works-list__item-text--diary">
+                Щоденники (записні книжки)
+              </p>
             </li>
 
             <li class="works-list__item">
@@ -361,8 +348,82 @@
       </section>
 
       <!--Section About us-->
-      <section class="about-us">
-        <div class="container"></div>
+      <section id="about-us" class="about-us">
+        <div class="container">
+          <h2 class="about-us__title">Про нас</h2>
+        </div>
+
+        <div class="about-us__description">
+          <div class="container">
+            <h3 class="about-us__description-title">Друкарня Мульти Арт</h3>
+            <p class="about-us__description-main-text">
+              У нас Ви отримуєте якість преміум-рівня і роботу великої команди фахівців!
+            </p>
+
+            <ul class="about-us__list">
+              <li class="about-us__list-item">
+                <p class="about-us__list-item-text">
+                  Друкарня Мульти Арт — сучасне багатопрофільне поліграфічне виробництво.
+                </p>
+              </li>
+
+              <li class="about-us__list-item">
+                <p class="about-us__list-item-text">
+                  Заснована в 2007 році друкарня спеціалізується на виробництві високоякісної
+                  продукції : книг, журналів, каталогів тощо.
+                </p>
+              </li>
+
+              <li class="about-us__list-item">
+                <p class="about-us__list-item-text">
+                  Друкарня постійно оновлюється і освоює необхідне і найсучасніше, до та після
+                  друкарське обладнання.
+                </p>
+              </li>
+
+              <li class="about-us__list-item">
+                <p class="about-us__list-item-text">
+                  Таке виробництво вимагає максимально можливого спектру машин і технологій на
+                  сьогоднішній день у нашому розпорядженні більше 20 одиниць техніки.
+                </p>
+              </li>
+
+              <li class="about-us__list-item">
+                <p class="about-us__list-item-text">
+                  Друкарня Мульти Арт забезпечує додрукарську підготовку, вивід CtP-форм (пластин),
+                  друкарський друк на машинах Heidelberg, Roland та здійснює після друкарські
+                  процеси.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="about-us__wrapper-indicators">
+          <div class="container">
+            <ul class="about-us__indicators">
+              <li class="about-us__indicators-item">
+                <span class="about-us__indicators-item-numbers">16</span
+                ><span class="about-us__indicators-item-text">років на ринку</span>
+              </li>
+
+              <li class="about-us__indicators-item">
+                <span class="about-us__indicators-item-numbers">2140+</span
+                ><span class="about-us__indicators-item-text">тон готової продукції</span>
+              </li>
+
+              <li class="about-us__indicators-item">
+                <span class="about-us__indicators-item-numbers">2743+</span
+                ><span class="about-us__indicators-item-text">задоволених клієнтів</span>
+              </li>
+
+              <li class="about-us__indicators-item">
+                <span class="about-us__indicators-item-numbers">15375+</span
+                ><span class="about-us__indicators-item-text">розроблених макетів</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <!--Section Gallery-->
