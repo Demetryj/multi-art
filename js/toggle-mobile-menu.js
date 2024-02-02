@@ -12,6 +12,12 @@
     menuBtnRef.setAttribute('aria-expanded', !expanded);
 
     mobileMenuRef.classList.toggle('is-open');
+
+    if (mobileMenuRef.classList.contains('is-open')) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
   });
 
   window.addEventListener('resize', () => {
@@ -30,8 +36,10 @@
   navLinkRef1.addEventListener('click', () => {
     if (mobileMenuRef.classList.contains('is-open')) {
       menuBtnRef.classList.remove('is-open');
-
       mobileMenuRef.classList.remove('is-open');
+
+      document.body.style.overflow = 'auto';
+      return;
     } else {
       return;
     }
@@ -40,19 +48,21 @@
   navLinkRef2.addEventListener('click', () => {
     if (mobileMenuRef.classList.contains('is-open')) {
       menuBtnRef.classList.remove('is-open');
-
       mobileMenuRef.classList.remove('is-open');
-    } else {
+
+      document.body.style.overflow = 'auto';
       return;
+    } else {
     }
   });
 
   navLinkRef3.addEventListener('click', () => {
     if (mobileMenuRef.classList.contains('is-open')) {
       menuBtnRef.classList.remove('is-open');
-
       mobileMenuRef.classList.remove('is-open');
-    } else {
+
+      document.body.style.overflow = 'auto';
+
       return;
     }
   });
