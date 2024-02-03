@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/icons/favicon.svg" />
     <title>Друкарня Мульти Арт</title>
 
     <link
@@ -23,16 +24,16 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <a href="./index.html" class="logo">
+        <div class="logo">
           <svg class="logo__icon" width="60" height="60" aria-label="Логотип">
             <use href="./images/icons/symbol-defs.svg#logo"></use>
           </svg>
-        </a>
+        </div>
 
         <!--Button to open/close the mobile menu-->
         <button class="burger-menu-button" aria-expanded="false" data-menu-button>
           <svg
-            class="logo__icon"
+            class="burger-menu__icon"
             width="48"
             height="48"
             aria-label="Іконка відкриття/закриття мобільного меню"
@@ -63,7 +64,7 @@
                 </li>
 
                 <li class="navigation__list-item" data-link-3>
-                  <a href="" class="navigation__list-link">Контакти</a>
+                  <a href="#contscts" class="navigation__list-link">Контакти</a>
                 </li>
               </ul>
             </nav>
@@ -511,17 +512,140 @@
       <section class="clients">
         <div class="container">
           <h2 class="clients__title">Наші клієнти</h2>
+
+          <div class="clients__list">
+            <div class="clients__wrapper-items-1">
+              <div class="clients__item-lviv-handmade-chocolate">
+                <img
+                  src="./images/clients/lviv-handmade-chocolate@2x.png"
+                  alt="Львівська майстерня шоколаду - логотип"
+                />
+              </div>
+
+              <div class="clients__item-instal-plast">
+                <img
+                  src="./images/clients/instal-plast@2x.png"
+                  alt="Промислова група Інсталпласт - логотип"
+                />
+              </div>
+
+              <div class="clients__item-limo">
+                <img src="./images/clients/limo@2x.png" alt="Лімо - логотип" />
+              </div>
+            </div>
+
+            <div class="clients__wrapper-items-2">
+              <div class="clients__item-galka">
+                <img src="./images/clients/galka@2x.png" alt="Галка - логотип" />
+              </div>
+
+              <div class="clients__item-sunny-delight">
+                <img
+                  src="./images/clients/sunny-delight@2x.png"
+                  alt="ФГ Сонячна насолода - логотип"
+                />
+              </div>
+
+              <div class="clients__item-clinic">
+                <img
+                  src="./images/clients/clinic@2x.png "
+                  alt="Клініка репродукції людини Альтернатива - логотип"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <!--Section Production-->
       <section class="production">
-        <div class="container"></div>
+        <div class="container production__container">
+          <div class="production__wrapper">
+            <h1 class="production__title">Виробництво</h1>
+            <address>
+              <p class="production__address">
+                80380, Львівська обл., Жовківський р-н, с. Гряда, вул. Шевченка, 5
+              </p>
+            </address>
+          </div>
+
+          <div class="production__map">
+            <a
+              href="https://maps.app.goo.gl/n972oQDk7vSDNAtY9"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <img
+                srcset="./images/map/map.png 1x, ../images/map/map@2x.png 2x"
+                src="./images/map/map.png"
+                alt="Карта Google з позначкою місця розташування виробництва"
+              />
+            </a>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <div class="container"></div>
+    <footer id="contscts" class="footer">
+      <div class="container">
+        <div class="footer__box">
+          <address class="address">
+            <h3 class="address__title">Головний офіс</h3>
+            <div class="address-wrapper-1">
+              <div class="address-wrapper-2">
+                <p class="address__text">м. Львів вул. Б. Хмельницького, 106</p>
+                <p class="address__text">Пн-пт 9:00-18:00</p>
+              </div>
+
+              <div class="address-wrapper-3">
+                <p class="address__text">+380 (93) 725 33 55</p>
+                <p class="address__text">+380 (67) 725 30 00</p>
+              </div>
+            </div>
+
+            <div class="address-wrapper-4">
+              <p class="address__text">+380 (67) 676 50 16</p>
+              <p class="address__text">multiart777@gmal.com</p>
+            </div>
+          </address>
+
+          <div class="wrapper-footer-links">
+            <div>
+              <svg width="94" height="94" aria-label="Логотип">
+                <use href="./images/icons/symbol-defs.svg#logo"></use>
+              </svg>
+            </div>
+
+            <div class="wrapper-social-networks-links">
+              <a
+                href="https://www.facebook.com/multiart.lviv"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="social-networks-link"
+              >
+                <svg width="44" height="44" aria-label="Facebook іконка">
+                  <use href="./images/icons/symbol-defs.svg#facebook"></use>
+                </svg>
+              </a>
+
+              <a href="https://www.instagram.com/multiart.lviv?igsh=MTc3c2xlNGZkMW5kNg==">
+                <svg
+                  width="44"
+                  height="44"
+                  aria-label="Instagram іконка"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="social-networks-link"
+                >
+                  <use href="./images/icons/symbol-defs.svg#instagram"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="rights">&copy All rights reserved 2024</div>
+        </div>
+      </div>
     </footer>
 
     <script defer src="./js/toggle-mobile-menu.js"></script>
