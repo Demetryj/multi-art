@@ -113,6 +113,13 @@ p {
   }
 }
 
+.logo__icon {
+  @media screen and (min-width: 1440px) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
